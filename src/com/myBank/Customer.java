@@ -8,14 +8,12 @@ public class Customer {
 	
 	private String firstName;
 	private String lastName;
-	
-	//��ʾӵ�������ж���˻�
+
 	private List<Account> accounts;
 	
 	public Customer(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
-		
 		accounts = new ArrayList<Account>();
 	}
 

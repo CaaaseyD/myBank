@@ -1,4 +1,4 @@
-package test;
+package com.myBanktest;
 
 /*
  * This class creates the program to test the banking classes.
@@ -6,8 +6,7 @@ package test;
  * and generates a report of current account balances.
  */
 
-import banking8.*;
-import com.myBank.CustomerReport;
+import com.myBank.*;
 
 public class TestBanking8 {
 

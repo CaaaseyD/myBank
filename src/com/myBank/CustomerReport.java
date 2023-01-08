@@ -2,7 +2,6 @@ package com.myBank;
 
 import java.util.Iterator;
 
-import banking8.*;
 
 public class CustomerReport {
 
@@ -18,12 +17,7 @@ public class CustomerReport {
 		Iterator<Customer> customers = bank.getCustomers();
 		
 		while(customers.hasNext()){
-		
-//		for (int cust_idx = 0; cust_idx < bank.getNumOfCustomers(); cust_idx++) {
-//			customer = bank.getCustomer(cust_idx);
-
 			customer = customers.next();
-			
 			System.out.println();
 			System.out.println("Customer: " + customer.getLastName() + ", "
 					+ customer.getFirstName());
@@ -31,13 +25,8 @@ public class CustomerReport {
 			Iterator<Account> accounts = customer.getAccounts();
 			
 			while(accounts.hasNext()){
-//			for (int acct_idx = 0; acct_idx < customer.getNumOfAccounts(); acct_idx++) {
-//				Account account = customer.getAccount(acct_idx);
-				
 				Account account = accounts.next();
-				
 				String account_type = "";
-
 				// Determine the account type
 				/***
 				 * Step 1: Use the instanceof operator to test what type of
@@ -56,7 +45,7 @@ public class CustomerReport {
 				 * free to use the currency_format formatter to generate a
 				 * "currency string" for the balance.
 				 ***/
-				System.out.println(account_type + ": current balance is ��"
+				System.out.println(account_type + ": current balance is "
 						+ account.getBalance());
 
 			}

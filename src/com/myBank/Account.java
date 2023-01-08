@@ -11,26 +11,16 @@ public class Account {
 	public double getBalance() {
 		return balance;
 	}
-	
-	/**
-	 * ��Ǯ����
-	 * @param amt: ����Ǯ��
-	 * @return: ���ش���Ƿ�ɹ�
-	 */
+
 	public boolean deposit(double amt){
 		this.balance += amt;
 		return true;
 	}
-	
-	/**
-	 * 
-	 * @param amt
-	 * @throws OverdraftException: ������ʱ���׳����쳣. 
-	 */
+
 	public void withdraw(double amt) {
 
 		if(amt > balance){
-			throw new OverdraftException("�ʽ���", amt - balance);
+			throw new OverdraftException("You dont have sufficient amount", amt - balance);
 		}
 		
 		this.balance -= amt;

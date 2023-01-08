@@ -2,12 +2,8 @@ package com.myBank;
 
 public class OverdraftException extends RuntimeException {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
-	//����
 	private double deficit;
 	
 	public double getDeficit() {

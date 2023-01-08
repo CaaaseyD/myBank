@@ -2,7 +2,6 @@ package com.myBank;
 
 public class CheckingAccount extends Account{
 
-	//��ʾ͸֧����
 	private Double overdraftProtection;
 	
 	public CheckingAccount(double init_balance) {
